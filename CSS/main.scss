@@ -1,0 +1,610 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(220, 208, 255);
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/HB3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family:'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Biryani', sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #b19cd9;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+   font-size: 62px; 
+   font-family: 'Catamaran', sans-serif;
+}
+.text-box p{
+   margin: 10px 0 40px;
+   font-size: 14px;
+   font-weight: 500; 
+   color: #fff;
+   font-family: 'Biryani', sans-serif;
+}
+.so_horny_rn{
+    display: inline-block;
+    font-family: 'Biryani', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.so_horny_rn:hover{
+    border: 1px solid #b19cd9;
+    background: #b19cd9;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px; 
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(220, 208, 255);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px; 
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+        
+    }
+         
+}
+    
+/*-------- course --------*/
+
+.TPM{
+    width: 100%;
+    margin: auto;
+    text-align:center;
+    padding-top: 100px;
+    background-color: rgb(15, 15, 15);
+}
+
+.TPM h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Catamaran', sans-serif;
+    color:rgb(100, 100, 100);
+}
+h3{
+    color:rgb(100, 100, 100);
+    font-family: 'Sorts Mill Goudy', serif;
+}
+p{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+    font-family: 'Biryani', sans-serif;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #000;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px 20px 20px;
+    box-sizing: border-box;
+    gap: 1em;
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*----------pictures of les drogas-----------*/
+
+.risk{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(15, 15, 15);
+}
+.risk h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Catamaran', sans-serif;
+    color:rgb(100, 100, 100);
+}
+.risky-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+}
+.risky-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(220, 162, 200,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color:#fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: 'Catamaran', sans-serif;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*----------countries-----*/
+
+.countries{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 30px;
+    background:rgb(15, 15, 15);
+}
+.countries h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(100, 100, 100);
+}
+.countries-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.countries-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.countries-col p{
+    padding: 0;
+    font-family: 'Biryani', sans-serif;
+}
+.countries-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/*------Testimonies-------*/
+
+.testimonies{
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    padding-left: 10px;
+    text-align: center;
+    background:rgb(15, 15, 15);
+}
+.testimonies h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Catamaran', sans-serif;
+    color:rgb(100, 100, 100);
+}
+.testimonies-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #E0B0FF;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonies-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonies-col p{
+    padding: 0;
+    font-family: 'Biryani', sans-serif;
+}
+.testimonies-col h3{
+    margin-top: 15px;
+    text-align: left;
+    font-family: 'Catamaran', sans-serif;
+}
+.testimonies-col .fa{
+    color: crimson;
+}
+@media(max-width: 700px){
+    .testimonies-col img{
+        margin-left: 0px;
+        margin-right: 15px;  
+    }
+    .testimonies-col h1{
+        text-align: right;
+    }
+    .testimonies p{
+        text-align: left;
+    }
+
+}
+
+/*--------- CALL TO ACTION -----------*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(eduford_img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif;
+}
+
+@media (max-width: 700px){
+    .cta h1{
+       font-size: 24px; 
+    }
+}
+
+/*--------- FOOTER -----------*/
+
+.Footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(15, 15, 15);
+}
+.Footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color:rgb(100, 100, 100);
+    font-family: 'Catamaran', sans-serif;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+
+/*----------------- about us page -------------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/please\ follow\ instrutions\ from\ the\ doctor\ 2.jpg); 
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/*----------------- about us content ----------------*/
+.about-us{
+    width: 100%;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    background:rgb(15, 15, 15);
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col video{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+    font-family: 'Catamaran', sans-serif;
+    color:rgb(100, 100, 100);
+}
+.about-col p{
+    padding: 15px 0 25px;
+    font-family: 'Biryani', sans-serif;
+}
+
+.red-btn{
+    border: 1px solid #b19cd9;
+    background: transparent;
+    color: #b19cd9;
+}
+.red-btn:hover{
+    color: #fff;
+}
+
+/*-------------- Global Perspective FAQS --------------*/
+
+.faqs{
+    background-color: #1B1B1B;
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 7rem;
+}
+
+.faqs h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.container-faqs__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem
+}
+
+.faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: #0C090A;
+    cursor: pointer;
+}
+
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2;
+    font-family: 'Catamaran', sans-serif;
+    color:rgb(100, 100, 100)
+}
+
+.faq__icon{
+    align-self: flex-start;
+    font-size: 1.2rem;
+    color: rgb(100, 100, 100);
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    display: none;
+    font-family: 'Biryani', sans-serif;
+    color: rgb(100, 100, 100);
+}
+
+.faq.open p{
+    display: block;
+}
+
+@media (max-width: 700px){
+    .faqs{
+        background-color: #1B1B1B;
+        box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 1rem;
+    }
+    
+    .faqs h2{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        font-family: 'Catamaran', sans-serif;
+    }
+    
+    .container-faqs__container{
+        display: grid;
+        grid-template-columns: 0.9fr 0.9fr;
+        gap: 0.8rem
+    }
+    
+    .faq{
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        height: fit-content;
+        background: #0C090A;
+        cursor: pointer;
+    }
+    
+    .faq h4{
+        font-size: 1rem;
+        line-height: 2.2;
+        font-family: 'Catamaran', sans-serif;
+    }
+    
+    .faq__icon{
+        align-self: flex-start;
+        font-size: 1.2rem;
+    }
+    
+    .faq p{
+        margin-top: 0.8rem;
+        display: none;
+        font-family: 'Biryani', sans-serif;
+    }
+    
+    .faq.open p{
+        display: block;
+    }
+}
+
+/*---------- newspaper style Global Perspective ----------------*/
+
+.booty{
+    margin: 0;
+    background: rgb(15, 15, 15);
+    color: white;
+    text-align: center;
+}
+
+.outer{
+    padding: 1em;
+}
+
+.outer p{
+    font-family: 'Biryani', sans-serif;
+    color: rgb(160, 160, 160);
+    margin-top: 0;
+}
+
+.outer h1, h2, h3{
+    font-family: 'Catamaran', sans-serif;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.outer h3{
+    color:rgb(199, 199, 199)
+}
+
+.column{
+    column-count: 1;
+    column-gap: 2em;
+}
+
+.column img{
+    width: 80%;
+    margin: 1em 0 0;
+}
+
+@media only screen and (min-width: 768px)  {
+
+    .booty{
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .outer p{
+        line-height: 1.6em;
+    }
+
+    .column{
+       column-count: 2; 
+       column-rule-style: solid;
+       column-rule-color: rgb(43, 43, 43);
+    }
+    .column > * {
+        margin-top: 0;
+    }
+    .outer h1{
+        font-size: 3rem;
+        margin: 2em 0 1em;
+    }
+    .outer{
+        padding: 4em;
+    }
+    article{
+        padding: 2em;
+        background: #181818
+    }
+}
