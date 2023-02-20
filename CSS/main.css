@@ -411,15 +411,15 @@ p {
 }
 
 /*----------------- about us page -------------------*/
-.sub-header {
+.sub-header{
   height: 50vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/please\ follow\ instrutions\ from\ the\ doctor\ 2.jpg);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  font-family: "Catamaran", sans-serif;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/images/Globalheader.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-family: 'Catamaran', sans-serif;
 }
 
 /*----------------- about us content ----------------*/
