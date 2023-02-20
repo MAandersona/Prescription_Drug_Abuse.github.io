@@ -540,6 +540,17 @@ p{
 
 /*---------- newspaper style Global Perspective ----------------*/
 
+.sub-header{
+  height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/Images/Globalheader.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-family: 'Catamaran', sans-serif;
+}
+
 .booty{
     margin: 0;
     background: rgb(15, 15, 15);
